@@ -92,7 +92,6 @@ func _on_gen_image_pressed() -> void:
 			Vector2(tile_size * 7 + half_tile_size, tile_size * 2 + half_tile_size),
 			Vector2(tile_size * 11 + half_tile_size, half_tile_size),
 			Vector2(tile_size * 11 + half_tile_size, tile_size * 2 + half_tile_size),
-			Vector2(tile_size * 11 + half_tile_size, tile_size * 3 + half_tile_size),
 		],
 		Rect2(tile_size * 2, 0, half_tile_size, half_tile_size): [
 			Vector2(tile_size * 2, 0),
@@ -332,7 +331,7 @@ func _on_gen_tile_set_pressed() -> void:
 	tile_set.autotile_set_bitmask(0, Vector2(6, 3),
 		TileSet.BIND_TOPLEFT + TileSet.BIND_LEFT + TileSet.BIND_TOP + TileSet.BIND_CENTER + TileSet.BIND_RIGHT)
 	tile_set.autotile_set_bitmask(0, Vector2(7, 0),
-		TileSet.BIND_TOPLEFT + TileSet.BIND_LEFT + TileSet.BIND_TOP + TileSet.BIND_CENTER + TileSet.BIND_BOTTOM + TileSet.BIND_RIGHT)
+		TileSet.BIND_TOPRIGHT + TileSet.BIND_LEFT + TileSet.BIND_TOP + TileSet.BIND_CENTER + TileSet.BIND_BOTTOM + TileSet.BIND_RIGHT)
 	tile_set.autotile_set_bitmask(0, Vector2(7, 1),
 		TileSet.BIND_LEFT + TileSet.BIND_BOTTOMLEFT + TileSet.BIND_TOP + TileSet.BIND_CENTER + TileSet.BIND_BOTTOM)
 	tile_set.autotile_set_bitmask(0, Vector2(7, 2),
