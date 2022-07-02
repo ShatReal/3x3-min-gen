@@ -16,8 +16,8 @@ func _ready() -> void:
 
 
 func _on_gen_image_pressed() -> void:
-	var texture := load($VBox/Input/LineEdit.text)
-	var tiles: Image = texture.get_data()
+	var tiles := Image.new()
+	tiles.load($VBox/Input/LineEdit.text)
 	var tile_size := tiles.get_width() / 5
 	var half_tile_size := tile_size / 2
 	
